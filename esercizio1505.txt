@@ -1,0 +1,51 @@
+#Modulo menu
+
+def menu():
+	
+	print ("Scegli la figura di cui vuoi calcolare il perimetro:")
+	print ("1. quadrato")
+	print ("2. cerchio")
+	print ("3. rettangolo")
+	print ("4.  esci dal programma")
+
+
+	while True:
+
+
+
+
+		scelta = input("seleziona il perimetro che vuoi calcolare:")
+
+	
+	
+		if scelta == '1':
+
+				x = int (input ("inserisci la misura del lato:"))
+				print ("il perimetro del quadrato é",x*4)
+
+
+
+		elif scelta == '2':
+
+				r = int (input ("inserisci la misura del raggio:"))
+				pigreco = 3.14
+				print ("la circonferenza del cerchio é",r*pigreco*2)
+
+
+		elif scelta == '3':
+
+				b = int (input ("inserisci la misura della base:"))
+				h = int (input ("inserisci la misura dell'altezza:"))
+				print ("il perimetro del rettangolo é",b*2+h*2)
+				
+		elif scelta == '4':
+				
+				print ("grazie di aver usato il programma.Arrivederci")
+				break
+
+		
+		
+		else:
+		
+      
+			      	print ("opzione non valida")
