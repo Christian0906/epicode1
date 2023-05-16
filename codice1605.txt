@@ -1,0 +1,16 @@
+import socket
+import random
+
+
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random._urandom(1024)
+ip= "192.168.32.100"
+port= 44445
+
+sent = 0
+
+while True:
+		sock.sendto(bytes,(ip,port))
+		print ("invia %s pacchetti a %s alla porta %s.",(sent,ip,port))
+		sent= sent +1
